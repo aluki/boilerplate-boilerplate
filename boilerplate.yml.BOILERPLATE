@@ -6,21 +6,21 @@ skip_files:
 
 hooks:
   after:
-    - dir: "{{ outputFolder }}"
+    - dir: "{{ "{{ outputFolder }}" }}"
       command: mv
       args:
         - Taskfile.yml.BOILERPLATE
         - Taskfile.yml
-    - dir: "{{ outputFolder }}"
+    - dir: "{{ "{{ outputFolder }}" }}"
       command: mv
       args:
         - mise.toml.BOILERPLATE
         - mise.toml
-    - dir: "{{ outputFolder }}"
+    - dir: "{{ "{{ outputFolder }}" }}"
       command: rm
       args:
         - mise.lock
-    - dir: "{{ outputFolder }}"
+    - dir: "{{ "{{ outputFolder }}" }}"
       command: touch
       args:
         - mise.lock
