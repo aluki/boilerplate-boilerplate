@@ -1,0 +1,6 @@
+[tools]
+boilerplate = "latest"
+task = "latest"
+
+[settings]
+lockfile = true

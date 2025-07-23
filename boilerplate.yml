@@ -1,0 +1,36 @@
+required_version: "~> 0.6"
+
+skip_files:
+  - path: .git
+  - path: .git/**/*
+
+hooks:
+  after:
+    - dir: "{{ outputFolder }}"
+      command: mv
+      args:
+        - Taskfile.yml.BOILERPLATE
+        - Taskfile.yml
+    - dir: "{{ outputFolder }}"
+      command: mv
+      args:
+        - mise.toml.BOILERPLATE
+        - mise.toml
+    - dir: "{{ outputFolder }}"
+      command: rm
+      args:
+        - mise.lock
+    - dir: "{{ outputFolder }}"
+      command: touch
+      args:
+        - mise.lock
+    - dir: "{{ outputFolder }}"
+      command: mise
+      args:
+        - i
+    - dir: "{{ outputFolder }}"
+      command: task
+      args:
+        - init
+    - dir: "{{ outputFolder }}"
+      command: task
