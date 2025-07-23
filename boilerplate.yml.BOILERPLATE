@@ -9,11 +9,6 @@ hooks:
     - dir: "{{ outputFolder }}"
       command: mv
       args:
-        - boilerplate.yml.BOILERPLATE
-        - boilerplate.yml
-    - dir: "{{ outputFolder }}"
-      command: mv
-      args:
         - Taskfile.yml.BOILERPLATE
         - Taskfile.yml
     - dir: "{{ outputFolder }}"
