@@ -9,8 +9,8 @@ hooks:
     - dir: "{{ outputFolder }}"
       command: mv
       args:
-        - .gitignore.yml.BOILERPLATE
-        - .gitignore.yml
+        - .gitignore.BOILERPLATE
+        - .gitignore
     - dir: "{{ outputFolder }}"
       command: mv
       args:
