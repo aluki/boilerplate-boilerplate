@@ -26,8 +26,18 @@ hooks:
     - dir: "{{ outputFolder }}"
       command: mv
       args:
+        - Taskfile.yml.BOILERPLATE.BOILERPLATE
+        - Taskfile.yml.BOILERPLATE
+    - dir: "{{ outputFolder }}"
+      command: mv
+      args:
         - mise.toml.BOILERPLATE
         - mise.toml
+    - dir: "{{ outputFolder }}"
+      command: mv
+      args:
+        - mise.toml.BOILERPLATE.BOILERPLATE
+        - mise.toml.BOILERPLATE
     - dir: "{{ outputFolder }}"
       command: rm
       args:
@@ -35,4 +45,5 @@ hooks:
     - dir: "{{ outputFolder }}"
       command: touch
       args:
+        - .gitignore.BOILERPLATE
         - mise.lock
