@@ -16,6 +16,11 @@ hooks:
     - dir: "{{ outputFolder }}"
       command: mv
       args:
+        - .gitignore.BOILERPLATE.BOILERPLATE
+        - .gitignore.BOILERPLATE
+    - dir: "{{ outputFolder }}"
+      command: mv
+      args:
         - boilerplate.yml.BOILERPLATE
         - boilerplate.yml
     - dir: "{{ outputFolder }}"
@@ -45,5 +50,4 @@ hooks:
     - dir: "{{ outputFolder }}"
       command: touch
       args:
-        - .gitignore.BOILERPLATE
         - mise.lock
