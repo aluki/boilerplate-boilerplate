@@ -24,3 +24,4 @@ tasks:
       - init
     cmds:
       - echo "Implement me"
+      - false
