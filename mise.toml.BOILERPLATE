@@ -3,4 +3,4 @@ lockfile = true
 
 [tools]
 boilerplate = "0"
-task = "2"
+task = "3"
