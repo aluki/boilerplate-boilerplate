@@ -2,4 +2,4 @@
 lockfile = true
 
 [tools]
-task = "latest"
+task = "2"
