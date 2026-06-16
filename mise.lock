@@ -33,25 +33,33 @@ checksum = "sha256:ded341341ff57be980bd51b6786517c4c3440bded8766922bc76bf9c4f4b4
 url = "https://github.com/gruntwork-io/boilerplate/releases/download/v0.16.0/boilerplate_windows_amd64.exe"
 
 [[tools.task]]
-version = "2.8.1"
+version = "3.51.1"
 backend = "aqua:go-task/task"
 
+[tools.task."platforms.linux-arm64"]
+checksum = "sha256:49c58bb00eff2449a5553f3b3e694fc424e0dc04d5c669d8831126daee1000f8"
+url = "https://github.com/go-task/task/releases/download/v3.51.1/task_linux_arm64.tar.gz"
+
+[tools.task."platforms.linux-arm64-musl"]
+checksum = "sha256:49c58bb00eff2449a5553f3b3e694fc424e0dc04d5c669d8831126daee1000f8"
+url = "https://github.com/go-task/task/releases/download/v3.51.1/task_linux_arm64.tar.gz"
+
 [tools.task."platforms.linux-x64"]
-checksum = "sha256:c7ca69ef85a6db25b04f90d417ec7e9c537518d7023c2a563ae4d1e34b841aba"
-url = "https://github.com/go-task/task/releases/download/v2.8.1/task_linux_amd64.tar.gz"
+checksum = "sha256:da7e92f0ff961ef2aae7cfecbad8d1fd2a08d7b09ba968673adf7ff389b243b5"
+url = "https://github.com/go-task/task/releases/download/v3.51.1/task_linux_amd64.tar.gz"
 
 [tools.task."platforms.linux-x64-musl"]
-checksum = "sha256:c7ca69ef85a6db25b04f90d417ec7e9c537518d7023c2a563ae4d1e34b841aba"
-url = "https://github.com/go-task/task/releases/download/v2.8.1/task_linux_amd64.tar.gz"
+checksum = "sha256:da7e92f0ff961ef2aae7cfecbad8d1fd2a08d7b09ba968673adf7ff389b243b5"
+url = "https://github.com/go-task/task/releases/download/v3.51.1/task_linux_amd64.tar.gz"
 
 [tools.task."platforms.macos-arm64"]
-checksum = "sha256:5d4a07136056f6f569d31eae904688eb9e2cb9a8d5696fea61bc21fdfd9f01c3"
-url = "https://github.com/go-task/task/releases/download/v2.8.1/task_darwin_amd64.tar.gz"
+checksum = "sha256:a0330f0df20dd1187e323f284a7f365c0ea1f2f271c1e154811e9fc4724bed13"
+url = "https://github.com/go-task/task/releases/download/v3.51.1/task_darwin_arm64.tar.gz"
 
 [tools.task."platforms.macos-x64"]
-checksum = "sha256:5d4a07136056f6f569d31eae904688eb9e2cb9a8d5696fea61bc21fdfd9f01c3"
-url = "https://github.com/go-task/task/releases/download/v2.8.1/task_darwin_amd64.tar.gz"
+checksum = "sha256:08b0a2107c56940e1fc7be15ebd5999f28a867925cfcd619393f8075fef67409"
+url = "https://github.com/go-task/task/releases/download/v3.51.1/task_darwin_amd64.tar.gz"
 
 [tools.task."platforms.windows-x64"]
-checksum = "sha256:9919e46e0b53a49657bc0d26616e32137cdb1e7c0bdcc1633beac5d81422cae0"
-url = "https://github.com/go-task/task/releases/download/v2.8.1/task_windows_amd64.zip"
+checksum = "sha256:422d79dff5afd5a55fb46ae1cfacc7350ec96d4ef27a63a3ec77a5c30a7b0f03"
+url = "https://github.com/go-task/task/releases/download/v3.51.1/task_windows_amd64.zip"
