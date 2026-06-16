@@ -1,6 +1,6 @@
 [tools]
-boilerplate = "latest"
-task = "latest"
+boilerplate = "0"
+task = "2"
 
 [settings]
 lockfile = true
