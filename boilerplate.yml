@@ -5,6 +5,7 @@ skip_files:
   - path: .git/**/*
   - path: .task
   - path: .task/**/*
+  - path: mise.lock
 
 hooks:
   after:
@@ -43,11 +44,3 @@ hooks:
       args:
         - mise.toml.BOILERPLATE.BOILERPLATE
         - mise.toml.BOILERPLATE
-    - dir: "{{ outputFolder }}"
-      command: rm
-      args:
-        - mise.lock
-    - dir: "{{ outputFolder }}"
-      command: touch
-      args:
-        - mise.lock
