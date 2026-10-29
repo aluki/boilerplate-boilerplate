@@ -18,10 +18,26 @@ tasks:
     cmds:
       - mise install
 
+  build:
+    desc: Builds the project
+    deps:
+      - init
+    cmds:
+      - echo "Implement me"
+      - false
+
+  run:
+    desc: Runs the project
+    deps:
+      - build
+    cmds:
+      - echo "Implement me"
+      - false
+
   test:
     desc: Test the project
     deps:
-      - init
+      - build
     cmds:
       - echo "Implement me"
       - false
