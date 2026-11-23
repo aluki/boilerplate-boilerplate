@@ -16,3 +16,4 @@ repos:
   - id: check-merge-conflict
   - id: check-vcs-permalinks
   - id: check-yaml
+  - id: check-toml
