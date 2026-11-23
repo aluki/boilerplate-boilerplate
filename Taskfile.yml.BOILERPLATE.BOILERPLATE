@@ -13,14 +13,29 @@ tasks:
       - task -l
     silent: true
 
-  init:
-    desc: Initialises the project
+  init_mise:
+    desc: Initialises the project - mise
     sources:
       - mise.toml
     generates:
       - mise.lock
     cmds:
       - mise install
+
+  init_precommit:
+    desc: Initialises the project - pre-commit
+    deps:
+      - init_mise
+    sources:
+      - .pre-commit-config.yaml
+    cmds:
+      - pre-commit install
+
+  init:
+    desc: Initialises the project
+    deps:
+      - init_mise
+      - init_precommit
 
   build:
     desc: Builds the project

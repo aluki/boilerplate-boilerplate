@@ -6,6 +6,7 @@ skip_files:
   - path: .task
   - path: .task/**/*
   - path: mise.lock
+  - path: .pre-commit-config.yaml
 
 hooks:
   after:
@@ -24,3 +25,8 @@ hooks:
       args:
         - mise.toml.BOILERPLATE
         - mise.toml
+    - dir: "{{ outputFolder }}"
+      command: mv
+      args:
+        - .pre-commit-config.yaml.BOILERPLATE
+        - .pre-commit-config.yaml
