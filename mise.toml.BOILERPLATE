@@ -3,4 +3,5 @@ lockfile = true
 
 [tools]
 boilerplate = "0"
+pre-commit = "4"
 task = "3"

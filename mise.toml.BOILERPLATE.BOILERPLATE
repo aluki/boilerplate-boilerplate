@@ -3,3 +3,4 @@ lockfile = true
 
 [tools]
 task = "3"
+pre-commit = "4"
